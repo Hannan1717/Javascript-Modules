@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Module Object</title>
+   </head>
+   <body>
+      <script type="module">
+         import * as hannan from "./scripts/module-object.js";
+
+         console.info(hannan.firstName);
+         console.info(hannan.middleName);
+         console.info(hannan.lastName);
+
+         hannan.hello();
+
+         const person = new hannan.Person();
+      </script>
+   </body>
+</html>
